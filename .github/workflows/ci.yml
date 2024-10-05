@@ -1,0 +1,16 @@
+name: js action
+on:
+  push:
+jobs:
+   job1:
+     runs-on: ubuntu-latest
+     steps:
+     - name: checkout
+       uses: actions/checkout@v4
+     - name: setup node
+       uses: actions/setup-node@v4
+     - name: install dependencies
+       run: npm install
+     - name: run index.js
+       uses: ./
+       

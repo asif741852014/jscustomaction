@@ -1,0 +1,5 @@
+name: js
+description: haha
+runs:
+  using: "node12"
+  main: "index.js"
